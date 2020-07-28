@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Samples of Multi-Speaker Text-to-speech Synthesis Using Deep Gaussian Processes</title>
+<style>
+    audio { width: 200px; }
+</style>
+</head>
+
+<body>
+<center>
+<h2><font color=midnightblue>Samples of Multi-Speaker Text-to-speech Synthesis Using Deep Gaussian Processes</font></h2>
+
+Utterance is defined by following format --- {speaker_id}_VOICEACTRESS100_{utterance_id}
+
+<h3><font color=darkcyan>Speaker-balanced (trained with 115 utterances)</font></h3>
+
+<table border=1 align=center>
+
+<tr><th width=20>Utterance</th>
+<th width=20>Original</th><th width=20>DNN</th><th width=20>DGP (Proposed 1)</th><th width=20>DGPLVM (Proposed 2)</th></tr>
+
+<tr align=center><td>006_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>006_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>010_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>010_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>022_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>022_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>063_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>063_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/Original/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DNN/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGP/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-balanced/DGPLVM/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+</table>
+
+<h3><font color=darkcyan>Speaker-imbalanced (trained with 5 utterances)</font></h3>
+
+<table border=1 align=center>
+
+<tr><th width=20>Utterance</th>
+<th width=20>Original</th><th width=20>DNN</th><th width=20>DGP (Proposed 1)</th><th width=20>DGPLVM (Proposed 2)</th></tr>
+
+<tr align=center><td>006_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/006_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>006_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/006_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>010_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/010_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>010_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/010_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>022_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/022_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>022_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/022_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>063_VOICEACTRESS100_097</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/063_VOICEACTRESS100_097.wav" autoplay/>x</audio></td>
+</tr>
+
+<tr align=center><td>063_VOICEACTRESS100_099</td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/Original/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DNN/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGP/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+<td><audio controls="controls"><source src="wav/Speaker-imbalanced/DGPLVM/063_VOICEACTRESS100_099.wav" autoplay/>x</audio></td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>
