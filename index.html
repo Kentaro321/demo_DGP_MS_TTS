@@ -9,9 +9,18 @@
 <body>
 <center>
 <h2><font color=midnightblue>Samples of Multi-Speaker Text-to-speech Synthesis Using Deep Gaussian Processes</font></h2>
+</center>
+
+<h3>Description</h3>
+<ul>
+<li>DNN: DNN-based multi-speaker TTS using one-hot speaker codes (reproduction of [N. Hojo et al., 2018]).</li>
+<li>DGP: Deep Gaussian Processes (DGP)-based TTS using one-hot speaker codes (Proposed).</li>
+<li>DGPLVM: Deep Gaussian Process Latent Variable Model (DGPLVM)-based TTS (Proposed). Speaker representation is jointly learned with acoustic model parameters.</li>
+</ul>
 
 Utterance is defined by following format --- {speaker_id}_VOICEACTRESS100_{utterance_id}
 
+<center>
 <h3><font color=darkcyan>Speaker-balanced (trained with 115 utterances)</font></h3>
 
 <table border=1 align=center>
@@ -76,6 +85,7 @@ Utterance is defined by following format --- {speaker_id}_VOICEACTRESS100_{utter
 </tr>
 </table>
 
+<center>
 <h3><font color=darkcyan>Speaker-imbalanced (trained with 5 utterances)</font></h3>
 
 <table border=1 align=center>
